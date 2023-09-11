@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "RubikPixels-Regular";
+    src: url('../fonts/RubikPixels-Regular.ttf');
+}
+
+[wm-flappy] {
+    position: relative;
+    border: 5px solid rgb(130, 1, 111);
+    height: 700px;
+    width: 1200px;
+    margin: 15px;
+    background-image: url("../img/ossos.jpg");
+    overflow: hidden;
+}
+
+.passaro {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+}
+
+.par-de-barreiras {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barreira .borda {
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #f49feb, #f05de1);
+    border: 2px solid #000;
+}
+
+.barreira .corpo {
+    height: 150px;
+    width: 110px;
+    background: linear-gradient(90deg, #f49feb, #f05de1);
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.progresso {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: RubikPixels-Regular;
+    font-size: 40px;
+    color: #f10cdb;
+    z-index: 100;
+}

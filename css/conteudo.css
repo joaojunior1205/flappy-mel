@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "RubikPixels-Regular";
+    src: url('../fonts/RubikPixels-Regular.ttf');
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.titleStyle {
+    color: pink;
+    font-family: RubikPixels-Regular;
+    font-size: 50px;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
